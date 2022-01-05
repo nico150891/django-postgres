@@ -1,0 +1,24 @@
+<html>
+    <body>
+        {% include "superior/barra.html" %}
+        <h1>
+            Mi primera plantilla con DIRS en settings e incrustadas
+        </h1>
+        <p>El nombre de la persona 1 es: {{nombre_persona.upper}} {{apellido}}</p>
+        <p>El nombre de la persona 2 es: {{persona_2.nombre}} {{persona_2.apellido}}</p>
+        <p>La fecha y hora son: {{fecha_ctual}}. El mes es {{fecha_ctual.month}}</p>
+        <p>Algunos temas son: {{temas.1}} y {{temas.2}}</p>
+        <p><strong>Temas con bucles y condicional</strong></p>
+        <p>
+            
+                {% for el_tema in temas %}
+                    {% if el_tema == "Plantillas" %}
+                        <p>Entra al IF: {{el_tema}}</p>
+                    {% else %}
+                    <p>{{el_tema}}</p>
+                    {% endif %}  
+                {% endfor %}
+            
+        </p>
+    </body>
+</html>

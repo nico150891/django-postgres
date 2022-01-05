@@ -54,7 +54,7 @@ ROOT_URLCONF = 'ejemplodjango.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["/home/nico0891/django-postgres/ejemplodjango/ejemplodjango/templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
